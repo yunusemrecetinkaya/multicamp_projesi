@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:multicamp_haberler_projesi/view/home_view/home_view.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:your_splash/your_splash.dart';
 import 'package:multicamp_haberler_projesi/widget/bottom_navigation_bar.dart';
 
@@ -18,10 +17,6 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
     return SplashScreen.timed(
       seconds: 5,
-      /* route: MaterialPageRoute(
-        builder: (_) =>
-            _isLogin == true ? HomeScreenView(_auth.currentUser) : HomeView(),
-      ), */
       route: MaterialPageRoute(
         builder: (_) => _auth.currentUser != null
             ? HomeScreenView(_auth.currentUser)

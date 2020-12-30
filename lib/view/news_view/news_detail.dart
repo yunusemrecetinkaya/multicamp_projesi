@@ -5,17 +5,16 @@ import 'package:webfeed/domain/rss_item.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class NewsDetail extends StatelessWidget {
-  RssItem item;
-  NewsDetail(RssItem item) {
-    this.item = item;
-  }
+  final RssItem item;
+  NewsDetail(this.item);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //title: Text(item.title),
-        title: AutoSizeText(item.title, maxLines: 2),
+        title: AutoSizeText(
+            item.title.replaceAll('&#39;', '\'').replaceAll('&quot;', '"'),
+            maxLines: 2),
         actions: [
           IconButton(
             icon: Icon(Icons.share),

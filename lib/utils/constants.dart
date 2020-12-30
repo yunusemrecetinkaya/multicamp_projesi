@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Constants {
-  //String NEWS_RSS_LINK = 'https://www.hurriyet.com.tr/rss/anasayfa';
   String NEWS_RSS_LINK = 'https://www.cnnturk.com/feed/rss/all/news';
 
   static String category(category) {
-    //return 'https://www.hurriyet.com.tr/rss/$category';
     return 'https://www.cnnturk.com/feed/rss/$category/news';
   }
 
@@ -24,10 +22,6 @@ class Constants {
     'Seyahat': 'seyahat',
   };
 
-  //Color mainColor = Color(0xff709fb0);
-  //Color backgroundColor = Color(0xff559CAD);
-
-  //Color buttonColor = Color(0xff92374D);
   Color buttonColor = Colors.red[800];
   Color mainBackgroundColor = Colors.white;
   Color switchColor = Colors.lightGreen;

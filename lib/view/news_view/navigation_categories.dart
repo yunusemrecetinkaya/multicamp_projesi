@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:multicamp_haberler_projesi/model/news_item_model.dart';
 import 'package:multicamp_haberler_projesi/utils/constants.dart';
-import 'package:multicamp_haberler_projesi/view/news_home/news_detail.dart';
 import 'package:multicamp_haberler_projesi/widget/category_button.dart';
-import 'package:multicamp_haberler_projesi/widget/category_news_container.dart';
 import 'package:multicamp_haberler_projesi/widget/loading_image.dart';
 import 'package:provider/provider.dart';
+
+import 'news_detail.dart';
 
 class NavigationCategories extends StatefulWidget {
   NavigationCategories({Key key}) : super(key: key);
@@ -58,26 +58,6 @@ class NavigationCategoriesState extends State<NavigationCategories> {
                 MaterialPageRoute(
                     builder: (BuildContext context) => NewsDetail(item)));
           },
-          /* child: Padding(
-            padding: const EdgeInsets.only(bottom: 10),
-            child: GridTile(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 30),
-                child: LoadingImage(item),
-              ),
-              footer: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: Text(
-                  item.title.replaceAll('&#39;', '\''),
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-            ),
-          ), */
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5),
             child: Column(

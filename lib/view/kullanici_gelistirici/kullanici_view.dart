@@ -4,8 +4,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class KullaniciView extends StatelessWidget {
-  User user;
-  KullaniciView(User this.user);
+  final User user;
+  KullaniciView(this.user);
 
   @override
   Widget build(BuildContext context) {

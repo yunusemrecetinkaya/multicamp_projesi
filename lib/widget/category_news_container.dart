@@ -4,8 +4,8 @@ import 'package:webfeed/domain/rss_item.dart';
 import 'loading_image.dart';
 
 class CategoryNewsTile extends StatelessWidget {
-  RssItem _item;
-  CategoryNewsTile(RssItem this._item);
+  final RssItem _item;
+  CategoryNewsTile(this._item);
 
   @override
   Widget build(BuildContext context) {

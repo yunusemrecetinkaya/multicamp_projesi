@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:multicamp_haberler_projesi/view/news_home/news_detail.dart';
+import 'package:multicamp_haberler_projesi/view/news_view/news_detail.dart';
 import 'package:webfeed/domain/rss_item.dart';
 
 import 'loading_image.dart';
 
 class SondakikaNewsTile extends StatelessWidget {
-  List<RssItem> _items;
-  SondakikaNewsTile(List<RssItem> this._items);
+  final List<RssItem> _items;
+  SondakikaNewsTile(this._items);
 
   @override
   Widget build(BuildContext context) {

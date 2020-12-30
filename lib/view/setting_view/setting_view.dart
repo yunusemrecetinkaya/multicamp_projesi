@@ -9,7 +9,6 @@ import 'package:multicamp_haberler_projesi/utils/constants.dart';
 import 'package:multicamp_haberler_projesi/view/home_view/home_view.dart';
 import 'package:multicamp_haberler_projesi/view/kullanici_gelistirici/gelistirici_view.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingView extends StatefulWidget {
   @override
@@ -17,24 +16,7 @@ class SettingView extends StatefulWidget {
 }
 
 class _SettingViewState extends State<SettingView> {
-  String _isSelected = 'light';
-  bool _isDark;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    _isDark = AdaptiveTheme.of(context).mode.isDark;
-  }
-
   bool isSwitched = false;
-
-  Future<void> deletePrefs() async {
-    final SharedPreferences _sharedPreferences =
-        await SharedPreferences.getInstance();
-    await _sharedPreferences.setBool("storedIsOpened", false);
-    print('SİLME ÇALIŞTI ');
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +29,6 @@ class _SettingViewState extends State<SettingView> {
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
         child: Container(
           child: Column(
-            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // title
               SizedBox(
@@ -168,12 +149,6 @@ class _SettingViewState extends State<SettingView> {
                           ),
                         ),
                       ),
-                      /* RaisedButton(
-                        onPressed: () {
-                          AdaptiveTheme.of(context).setDark();
-                        },
-                        child: Text('Dark'),
-                      ), */
                     ],
                   ),
                 ),
@@ -260,15 +235,5 @@ class _SettingViewState extends State<SettingView> {
     return TextStyle(
       fontSize: 20,
     );
-  }
-}
-
-class ThemeModelim with ChangeNotifier {
-  ThemeMode mode;
-  //ThemeMode get mode => _mode;
-
-  ThemeModelim(ThemeMode mode) {
-    this.mode = mode;
-    notifyListeners();
   }
 }
