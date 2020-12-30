@@ -2,14 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:multicamp_haberler_projesi/utils/constants.dart';
 
 class CategoryButton extends StatelessWidget {
-  String _currenCategory;
-  String _categoryHeader;
-  int _index;
-  CategoryButton(String currenCategory, String categoryHeader, int index) {
-    this._currenCategory = currenCategory;
-    this._categoryHeader = categoryHeader;
-    this._index = index;
-  }
+  final String _currenCategory;
+  final String _categoryHeader;
+  final int _index;
+  CategoryButton(this._currenCategory, this._categoryHeader, this._index);
 
   @override
   Widget build(BuildContext context) {

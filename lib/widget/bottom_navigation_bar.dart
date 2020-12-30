@@ -3,13 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:multicamp_haberler_projesi/model/news_item_model.dart';
 import 'package:multicamp_haberler_projesi/utils/constants.dart';
-import 'package:multicamp_haberler_projesi/view/kategoriler/navigation_categories.dart';
-import 'package:multicamp_haberler_projesi/view/news_home/navigator_home.dart';
+import 'package:multicamp_haberler_projesi/view/news_view/navigation_categories.dart';
+import 'package:multicamp_haberler_projesi/view/news_view/navigator_home.dart';
 import 'package:multicamp_haberler_projesi/view/setting_view/setting_view.dart';
 import 'package:multicamp_haberler_projesi/widget/drawer_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreenView extends StatefulWidget {
   final User user;

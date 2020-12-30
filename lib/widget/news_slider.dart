@@ -1,22 +1,17 @@
-import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:multicamp_haberler_projesi/utils/constants.dart';
+import 'package:multicamp_haberler_projesi/view/news_view/news_detail.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:webfeed/domain/rss_item.dart';
 
+// ignore: must_be_immutable
 class NewsSlider extends StatelessWidget {
-  List<RssItem> _item;
-  NewsSlider(List<RssItem> items) {
-    this._item = items;
-  }
-
-  //PageController _pageController;
+  final List<RssItem> _item;
+  NewsSlider(this._item);
 
   final _pageController = PageController();
   var currentIndex = 0;
 
-  //TODO: DETAIL SAYFASINA GİDECEK
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -30,10 +25,19 @@ class NewsSlider extends StatelessWidget {
             return Stack(
               children: [
                 Positioned.fill(
-                  child: Image.network(
-                    _item[index].imageUrl,
-                    //fit: BoxFit.fill,
-                    fit: BoxFit.cover,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  NewsDetail(_item[index])));
+                    },
+                    child: Image.network(
+                      _item[index].imageUrl,
+                      //fit: BoxFit.fill,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 Align(
@@ -75,19 +79,15 @@ class NewsSlider extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: SmoothPageIndicator(
-                controller: _pageController, // PageController
-                count: 10,
-                effect: SwapEffect(
-                  //dotColor:
-                  activeDotColor: Constants().buttonColor,
-                  dotHeight: 5,
-                  dotWidth: 10,
-                ),
-
-                // your preferred ecffet
-                onDotClicked: (index) {
-                  print('NEDİR ::::::. $index');
-                }),
+              controller: _pageController, // PageController
+              count: 10,
+              effect: SwapEffect(
+                //dotColor:
+                activeDotColor: Constants().buttonColor,
+                dotHeight: 5,
+                dotWidth: 10,
+              ),
+            ),
           ),
         ),
       ],

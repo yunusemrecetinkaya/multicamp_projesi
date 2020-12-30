@@ -1,13 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:webfeed/domain/rss_item.dart';
 
 class LoadingImage extends StatelessWidget {
-  RssItem _item;
-  LoadingImage(RssItem item) {
-    this._item = item;
-  }
+  final RssItem _item;
+  LoadingImage(this._item);
 
   @override
   Widget build(BuildContext context) {

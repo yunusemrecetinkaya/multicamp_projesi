@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:multicamp_haberler_projesi/view/home_view/home_view.dart';
-import 'package:multicamp_haberler_projesi/widget/bottom_navigation_bar.dart';
 
 class OnBoardView extends StatelessWidget {
   final introKey = GlobalKey<IntroductionScreenState>();

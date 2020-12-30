@@ -19,10 +19,7 @@ Future<void> main() async {
 
   runApp(
     MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => NewsItemModel()),
-        ChangeNotifierProvider(create: (_) => ThemeModelim(ThemeMode.light)),
-      ],
+      providers: [ChangeNotifierProvider(create: (_) => NewsItemModel())],
       child: EasyLocalization(
         path: "resources/langs",
         saveLocale: true,
