@@ -1,0 +1,30 @@
+{   
+
+    
+    "ayarlar":"Settings",
+    "detayOzellikler":"Detail Features",
+    "lisanslar":"Licenses",
+    "gelistirici":"Developer",
+    "tema":"Theme",
+    "siyah":"Dark",
+    "beyaz":"Light",
+    "dil":"Language",
+    "hesap":"Account",
+    "cikisYap":"Sign out",
+
+
+    "hosgeldin":"Welcome",
+    "profil":"Profile",
+
+    "haberler":"News",
+    "kategoriler":"Categories",
+
+    "sondakika":"Last minute",
+    "haberAra":"Search News",
+    "sonuc":" results found.",
+
+    "adi":"Name",
+    "sonOturum":"Last Login"
+
+    
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "386139620700",
+    "project_id": "multicamp-haberler-projesi",
+    "storage_bucket": "multicamp-haberler-projesi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386139620700:android:660858cad0593ab4ffed99",
+        "android_client_info": {
+          "package_name": "com.flutter.multicamp_haberler_projesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386139620700-ftii3as097pe5g73l7gestcgupj9o2sc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutter.multicamp_haberler_projesi",
+            "certificate_hash": "eb7454b17c8e6541dc6edba72460e30bc9fb0341"
+          }
+        },
+        {
+          "client_id": "386139620700-paiko7bql5c74egib5phq364g4pnahpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYeBo_m-XOM8XUGIuYzQbYaUZQFjRMb7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386139620700-paiko7bql5c74egib5phq364g4pnahpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
