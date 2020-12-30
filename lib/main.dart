@@ -9,9 +9,7 @@ import 'package:multicamp_haberler_projesi/utils/constants.dart';
 import 'package:multicamp_haberler_projesi/view/auth/splash_view.dart';
 import 'package:multicamp_haberler_projesi/view/on_board/on_board_view.dart';
 import 'package:provider/provider.dart';
-
 import 'model/news_item_model.dart';
-import 'view/setting_view/setting_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
