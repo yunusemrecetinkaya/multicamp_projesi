@@ -55,6 +55,8 @@ dependencies:
   first_time_screen: ^1.0.3
   introduction_screen: ^1.0.9
   smooth_page_indicator: ^0.2.0
+  bordered_text: ^1.0.1
+
   webfeed:
     git: 
       url: https://github.com/Adem68/webfeed.git					
