@@ -56,10 +56,18 @@ dependencies:
   introduction_screen: ^1.0.9
   smooth_page_indicator: ^0.2.0
   bordered_text: ^1.0.1
+  flutter_launcher_icons: ^0.8.1
 
   webfeed:
     git: 
-      url: https://github.com/Adem68/webfeed.git					
+      url: https://github.com/Adem68/webfeed.git	
+
+flutter_icons:
+  image_path: "asset/icon/icon.png" 
+  android: true
+  ios: true
+ 
+
   
 
 dev_dependencies:
