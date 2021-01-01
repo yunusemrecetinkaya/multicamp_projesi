@@ -9,6 +9,8 @@
 - Rive animation
 - On Boarding Screen
 
+- RSS : https://www.cnnturk.com/rss
+
 
 <img width="250" src="https://github.com/yunusemrecetinkaya/multicamp_projesi/blob/main/asset/ss/Screenshot_2021-01-01-13-54-57-454_com.flutter.multicamp_haberler_projesi.jpg"> <img width="250" src="https://github.com/yunusemrecetinkaya/multicamp_projesi/blob/main/asset/ss/Screenshot_2021-01-01-13-55-05-310_com.flutter.multicamp_haberler_projesi.jpg"> <img width="250" src="https://github.com/yunusemrecetinkaya/multicamp_projesi/blob/main/asset/ss/Screenshot_2021-01-01-13-55-09-513_com.flutter.multicamp_haberler_projesi.jpg">
 
